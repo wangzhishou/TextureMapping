@@ -2,3 +2,7 @@
 .idea
 .kimi-code/
 textures/.mimocode/
+
+# 视频渲染中间帧(每集约 3000-4000 张 1080x1920 PNG,约 4GB;
+# 可由 word-video/script/episode_render.py <集号> 重新生成,不要提交)
+word-video/ep*/frames/
