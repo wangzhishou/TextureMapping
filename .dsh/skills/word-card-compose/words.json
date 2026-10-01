@@ -1,0 +1,14 @@
+[
+  {"src": "东北虎",       "cn": "老虎",   "en": "tiger",     "ipa": "/ˈtaɪɡə(r)/"},
+  {"src": "丹顶鹤",       "cn": "丹顶鹤", "en": "crane",     "ipa": "/kreɪn/"},
+  {"src": "亚洲象",       "cn": "大象",   "en": "elephant",  "ipa": "/ˈelɪfənt/"},
+  {"src": "喜马拉雅旱獭", "cn": "旱獭",   "en": "marmot",    "ipa": "/ˈmɑːmət/"},
+  {"src": "大熊猫",       "cn": "熊猫",   "en": "panda",     "ipa": "/ˈpændə/"},
+  {"src": "小熊猫",       "cn": "小熊猫", "en": "red panda", "ipa": "/red ˈpændə/"},
+  {"src": "藏狐",         "cn": "狐狸",   "en": "fox",       "ipa": "/fɒks/"},
+  {"src": "藏羚羊",       "cn": "羚羊",   "en": "antelope",  "ipa": "/ˈæntɪləʊp/"},
+  {"src": "藏野驴",       "cn": "野驴",   "en": "donkey",    "ipa": "/ˈdɒŋki/"},
+  {"src": "野牦牛",       "cn": "牦牛",   "en": "yak",       "ipa": "/jæk/"},
+  {"src": "金丝猴",       "cn": "猴子",   "en": "monkey",    "ipa": "/ˈmʌŋki/"},
+  {"src": "雪豹",         "cn": "雪豹",   "en": "leopard",   "ipa": "/ˈlepəd/"}
+]
