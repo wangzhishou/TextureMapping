@@ -1,1 +1,10 @@
+# textures 下的二进制素材走 Git LFS
 textures/** filter=lfs diff=lfs merge=lfs -text
+
+# 工程代码与配置例外：留在普通 git 里（保留 text/diff，代码才能正常查看和比对）。
+# 不排除的话 textures/** 会把 .py/.json/.md 也做成 LFS 对象，
+# GitHub 上只剩 131 字节 pointer，代码没法看也没法 diff。
+textures/**/*.py !filter !diff !merge text
+textures/**/*.json !filter !diff !merge text
+textures/**/*.md !filter !diff !merge text
+textures/**/*.sh !filter !diff !merge text

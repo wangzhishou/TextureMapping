@@ -1,0 +1,68 @@
+{
+  "id": "dolphin-tutorial",
+  "title": "海豚抱海星 彩铅临摹教程",
+  "canvas": {
+    "width": 1008,
+    "height": 1792,
+    "orientation": "portrait",
+    "aspect": "9:16"
+  },
+  "inputs": {
+    "lineart": {
+      "path": "../dolphin-coloring/海豚 线稿.png",
+      "sha256": "3b8c7fffb04427d918aa7cee61814090035bb906dfe4422f0239b4d40ee21ed1",
+      "bytes": 448338
+    },
+    "color": {
+      "path": "../dolphin-coloring/海豚 彩铅画.png",
+      "sha256": "1e82a83e63198e47e665ed52cc7e07778fa211112155e82c2522b9a75488f9d0",
+      "bytes": 1636826
+    }
+  },
+  "stages": [
+    {
+      "id": "lineart-svg",
+      "skill": "lineart-svg",
+      "input": "lineart",
+      "outputs": [
+        "vector/strokes.svg",
+        "vector/manifest.json",
+        "vector/ink.png"
+      ]
+    },
+    {
+      "id": "lineart-color",
+      "skill": "lineart-color",
+      "inputs": [
+        "lineart",
+        "color"
+      ],
+      "outputs": [
+        "color/color-manifest.json",
+        "color/masks/",
+        "color/coverage/"
+      ]
+    },
+    {
+      "id": "svg-motion-video",
+      "skill": "svg-motion-video",
+      "inputs": [
+        "vector/strokes.svg",
+        "color/color-manifest.json"
+      ],
+      "outputs": [
+        "final/index.html",
+        "final/renders/"
+      ]
+    },
+    {
+      "id": "drawing-tutorial-video",
+      "skill": "drawing-tutorial-video",
+      "outputs": [
+        "drawing-tutorial.mp4",
+        "verification.json"
+      ]
+    }
+  ],
+  "status": "skeleton_inputs_ready"
+}

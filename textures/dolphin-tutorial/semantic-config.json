@@ -1,0 +1,41 @@
+{
+  "groups": {
+    "eyes": {
+      "label": "眼睛",
+      "order": 10
+    },
+    "face": {
+      "label": "脸与嘴巴",
+      "order": 20
+    },
+    "body": {
+      "label": "身体与肚皮",
+      "order": 30
+    },
+    "fin": {
+      "label": "背鳍与胸鳍",
+      "order": 40
+    },
+    "tail": {
+      "label": "尾鳍",
+      "order": 50
+    },
+    "starfish": {
+      "label": "海星",
+      "order": 60
+    },
+    "splash": {
+      "label": "水面与水花",
+      "order": 70
+    },
+    "bubbles": {
+      "label": "气泡",
+      "order": 80
+    },
+    "details": {
+      "label": "收尾细节",
+      "order": 90
+    }
+  },
+  "regions": []
+}
