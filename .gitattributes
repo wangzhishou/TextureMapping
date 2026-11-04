@@ -8,3 +8,15 @@ textures/**/*.py !filter !diff !merge text
 textures/**/*.json !filter !diff !merge text
 textures/**/*.md !filter !diff !merge text
 textures/**/*.sh !filter !diff !merge text
+
+# 历史遗留的 5 张单词卡：当初是以普通 blob 提交的（早于 LFS 规则对它们生效），
+# 工作区内容与 HEAD 逐字节相同，远端 GitHub 上也是可直接打开的真图。
+# 但按上面的 textures/** 规则，git 每次重算 clean 哈希都会得到一个 pointer，
+# 与已存的普通 blob 对不上，于是这 5 张永远显示「已修改」——是假象，不是真改动。
+# 这里对它们关掉 LFS 过滤：保持普通 blob，raw 直链仍是真图，status 恢复干净。
+# 注意只能按文件名逐个列：同目录另 62 张确实是 LFS pointer，批量通配会把它们的新改动藏掉。
+"textures/word-flashcards/apple 单词启蒙卡片（彩色）.png" !filter !diff
+"textures/word-flashcards/cat 单词启蒙卡片（彩色）.png" !filter !diff
+"textures/word-flashcards/cat 单词启蒙卡片（线稿）.png" !filter !diff
+"textures/word-flashcards/dog 单词启蒙卡片（线稿）.png" !filter !diff
+"textures/word-flashcards/duck 单词启蒙卡片（彩色）.png" !filter !diff
